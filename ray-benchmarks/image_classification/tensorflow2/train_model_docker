@@ -16,7 +16,6 @@ python ./scripts/resnet_ctl_imagenet_main.py \
   --epochs_between_evals=4 \
   --noeval_dataset_cache \
   --eval_offset_epochs=2 \
-  --eval_prefetch_batchs=192 \
   --label_smoothing=0.1 \
   --lars_epsilon=0 \
   --log_steps=12 \
@@ -34,7 +33,6 @@ python ./scripts/resnet_ctl_imagenet_main.py \
   --tf_gpu_thread_mode=gpu_private \
   --train_epochs=2 \
   --notraining_dataset_cache \
-  --training_prefetch_batchs=128 \
   --nouse_synthetic_data \
   --warmup_epochs=1 \
   --weight_decay=0.0002
@@ -46,6 +44,8 @@ python ./scripts/resnet_ctl_imagenet_main.py \
 # batch size was 1024
 # --log_steps=125 \
 # --training_prefetch_batchs=128 \
+# --training_prefetch_batchs=128 \
+# --eval_prefetch_batchs=192 \
 
 # Removed / modified:
 # --notrace_warmup \

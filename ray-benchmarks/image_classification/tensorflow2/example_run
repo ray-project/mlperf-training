@@ -1,0 +1,260 @@
+2022-09-13 00:22:50.910391: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+:::MLL 1663028572.668 cache_clear: {"value": true, "metadata": {"lineno": 114, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:52.668116 140645789026112 mlp_log.py:82] :::MLL 1663028572.668 cache_clear: {"value": true, "metadata": {"lineno": 114, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+:::MLL 1663028572.669 init_start: {"value": null, "metadata": {"lineno": 115, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:52.668783 140645789026112 mlp_log.py:82] :::MLL 1663028572.669 init_start: {"value": null, "metadata": {"lineno": 115, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+:::MLL 1663028572.669 submission_benchmark: {"value": "resnet", "metadata": {"lineno": 116, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:52.669305 140645789026112 mlp_log.py:82] :::MLL 1663028572.669 submission_benchmark: {"value": "resnet", "metadata": {"lineno": 116, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+:::MLL 1663028572.670 submission_division: {"value": "closed", "metadata": {"lineno": 117, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:52.669820 140645789026112 mlp_log.py:82] :::MLL 1663028572.670 submission_division: {"value": "closed", "metadata": {"lineno": 117, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+:::MLL 1663028572.670 submission_org: {"value": "google", "metadata": {"lineno": 118, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:52.670330 140645789026112 mlp_log.py:82] :::MLL 1663028572.670 submission_org: {"value": "google", "metadata": {"lineno": 118, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+:::MLL 1663028572.671 submission_platform: {"value": "gpu-v100-1", "metadata": {"lineno": 121, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:52.670845 140645789026112 mlp_log.py:82] :::MLL 1663028572.671 submission_platform: {"value": "gpu-v100-1", "metadata": {"lineno": 121, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+:::MLL 1663028572.671 submission_status: {"value": "cloud", "metadata": {"lineno": 122, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:52.671350 140645789026112 mlp_log.py:82] :::MLL 1663028572.671 submission_status: {"value": "cloud", "metadata": {"lineno": 122, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:52.671507 140645789026112 common.py:617] Module ./scripts/resnet_ctl_imagenet_main.py:
+I0913 00:22:52.672009 140645789026112 common.py:620] 	 flags_obj.use_tf_function = True
+I0913 00:22:52.672075 140645789026112 common.py:620] 	 flags_obj.single_l2_loss_op = True
+I0913 00:22:52.672131 140645789026112 common.py:620] 	 flags_obj.cache_decoded_image = False
+I0913 00:22:52.672185 140645789026112 common.py:620] 	 flags_obj.enable_device_warmup = False
+I0913 00:22:52.672236 140645789026112 common.py:620] 	 flags_obj.device_warmup_steps = 1
+I0913 00:22:52.672287 140645789026112 common.py:620] 	 flags_obj.num_replicas = 32
+I0913 00:22:52.672339 140645789026112 common.py:617] Module absl.app:
+I0913 00:22:52.672397 140645789026112 common.py:620] 	 flags_obj.run_with_pdb = False
+I0913 00:22:52.672447 140645789026112 common.py:620] 	 flags_obj.pdb_post_mortem = False
+I0913 00:22:52.672500 140645789026112 common.py:620] 	 flags_obj.pdb = False
+I0913 00:22:52.672551 140645789026112 common.py:620] 	 flags_obj.run_with_profiling = False
+I0913 00:22:52.672601 140645789026112 common.py:620] 	 flags_obj.profile_file = None
+I0913 00:22:52.672652 140645789026112 common.py:620] 	 flags_obj.use_cprofile_for_profiling = True
+I0913 00:22:52.672701 140645789026112 common.py:620] 	 flags_obj.only_check_args = False
+I0913 00:22:52.672753 140645789026112 common.py:620] 	 flags_obj.help = False
+I0913 00:22:52.672803 140645789026112 common.py:620] 	 flags_obj.helpshort = False
+I0913 00:22:52.672854 140645789026112 common.py:620] 	 flags_obj.helpfull = False
+I0913 00:22:52.672904 140645789026112 common.py:620] 	 flags_obj.helpxml = False
+I0913 00:22:52.672953 140645789026112 common.py:617] Module absl.logging:
+I0913 00:22:52.673023 140645789026112 common.py:620] 	 flags_obj.logtostderr = False
+I0913 00:22:52.673076 140645789026112 common.py:620] 	 flags_obj.alsologtostderr = False
+I0913 00:22:52.673126 140645789026112 common.py:620] 	 flags_obj.log_dir = 
+I0913 00:22:52.673178 140645789026112 common.py:620] 	 flags_obj.verbosity = 0
+I0913 00:22:52.673230 140645789026112 common.py:620] 	 flags_obj.logger_levels = {}
+I0913 00:22:52.673282 140645789026112 common.py:620] 	 flags_obj.stderrthreshold = fatal
+I0913 00:22:52.673332 140645789026112 common.py:620] 	 flags_obj.showprefixforinfo = True
+I0913 00:22:52.673382 140645789026112 common.py:617] Module absl.testing.absltest:
+I0913 00:22:52.673439 140645789026112 common.py:620] 	 flags_obj.test_random_seed = 301
+I0913 00:22:52.673490 140645789026112 common.py:620] 	 flags_obj.test_srcdir = 
+I0913 00:22:52.673540 140645789026112 common.py:620] 	 flags_obj.test_tmpdir = /tmp/absl_testing
+I0913 00:22:52.673590 140645789026112 common.py:620] 	 flags_obj.test_randomize_ordering_seed = 
+I0913 00:22:52.673639 140645789026112 common.py:620] 	 flags_obj.xml_output_file = 
+I0913 00:22:52.673689 140645789026112 common.py:617] Module common:
+I0913 00:22:52.673743 140645789026112 common.py:620] 	 flags_obj.enable_eager = True
+I0913 00:22:52.673794 140645789026112 common.py:620] 	 flags_obj.skip_eval = False
+I0913 00:22:52.673843 140645789026112 common.py:620] 	 flags_obj.set_learning_phase_to_train = True
+I0913 00:22:52.673893 140645789026112 common.py:620] 	 flags_obj.explicit_gpu_placement = False
+I0913 00:22:52.673943 140645789026112 common.py:620] 	 flags_obj.use_trivial_model = False
+I0913 00:22:52.673992 140645789026112 common.py:620] 	 flags_obj.report_accuracy_metrics = True
+I0913 00:22:52.674042 140645789026112 common.py:620] 	 flags_obj.lr_schedule = polynomial
+I0913 00:22:52.674091 140645789026112 common.py:620] 	 flags_obj.enable_tensorboard = False
+I0913 00:22:52.674141 140645789026112 common.py:620] 	 flags_obj.train_steps = None
+I0913 00:22:52.674191 140645789026112 common.py:620] 	 flags_obj.profile_steps = None
+I0913 00:22:52.674241 140645789026112 common.py:620] 	 flags_obj.batchnorm_spatial_persistent = True
+I0913 00:22:52.674293 140645789026112 common.py:620] 	 flags_obj.enable_get_next_as_optional = False
+I0913 00:22:52.674340 140645789026112 common.py:620] 	 flags_obj.enable_checkpoint_and_export = False
+I0913 00:22:52.674390 140645789026112 common.py:620] 	 flags_obj.tpu = 
+I0913 00:22:52.674439 140645789026112 common.py:620] 	 flags_obj.tpu_zone = 
+I0913 00:22:52.674489 140645789026112 common.py:620] 	 flags_obj.steps_per_loop = 1252
+I0913 00:22:52.674539 140645789026112 common.py:620] 	 flags_obj.use_tf_while_loop = True
+I0913 00:22:52.674588 140645789026112 common.py:620] 	 flags_obj.use_tf_keras_layers = False
+I0913 00:22:52.674638 140645789026112 common.py:620] 	 flags_obj.base_learning_rate = 8.5
+I0913 00:22:52.674692 140645789026112 common.py:620] 	 flags_obj.optimizer = LARS
+I0913 00:22:52.674741 140645789026112 common.py:620] 	 flags_obj.drop_train_remainder = True
+I0913 00:22:52.674791 140645789026112 common.py:620] 	 flags_obj.drop_eval_remainder = False
+I0913 00:22:52.674841 140645789026112 common.py:620] 	 flags_obj.label_smoothing = 0.1
+I0913 00:22:52.674893 140645789026112 common.py:620] 	 flags_obj.num_classes = 1000
+I0913 00:22:52.674943 140645789026112 common.py:620] 	 flags_obj.eval_offset_epochs = 2
+I0913 00:22:52.674993 140645789026112 common.py:620] 	 flags_obj.target_accuracy = 0.759
+I0913 00:22:52.675045 140645789026112 common.py:617] Module lars_util:
+I0913 00:22:52.675101 140645789026112 common.py:620] 	 flags_obj.end_learning_rate = None
+I0913 00:22:52.675152 140645789026112 common.py:620] 	 flags_obj.lars_epsilon = 0.0
+I0913 00:22:52.675204 140645789026112 common.py:620] 	 flags_obj.warmup_epochs = 1.0
+I0913 00:22:52.675255 140645789026112 common.py:620] 	 flags_obj.momentum = 0.9
+I0913 00:22:52.675307 140645789026112 common.py:617] Module resnet_model:
+I0913 00:22:52.675363 140645789026112 common.py:620] 	 flags_obj.weight_decay = 0.0002
+I0913 00:22:52.675422 140645789026112 common.py:620] 	 flags_obj.num_accumulation_steps = 2
+I0913 00:22:52.675510 140645789026112 common.py:617] Module resnet_runnable:
+I0913 00:22:52.675568 140645789026112 common.py:620] 	 flags_obj.trace_warmup = False
+I0913 00:22:52.675619 140645789026112 common.py:617] Module tensorflow.python.ops.parallel_for.pfor:
+I0913 00:22:52.675674 140645789026112 common.py:620] 	 flags_obj.op_conversion_fallback_to_while_loop = True
+I0913 00:22:52.675725 140645789026112 common.py:617] Module tensorflow.python.tpu.client.client:
+I0913 00:22:52.675780 140645789026112 common.py:620] 	 flags_obj.runtime_oom_exit = True
+I0913 00:22:52.675832 140645789026112 common.py:620] 	 flags_obj.hbm_oom_exit = True
+I0913 00:22:52.675894 140645789026112 common.py:617] Module tf2_common.utils.flags._base:
+I0913 00:22:52.675980 140645789026112 common.py:620] 	 flags_obj.data_dir = /home/dev/data/balajis-tiny-imagenet/tfrecords/train
+I0913 00:22:52.676037 140645789026112 common.py:620] 	 flags_obj.model_dir = /home/dev/data/scratch
+I0913 00:22:52.676088 140645789026112 common.py:620] 	 flags_obj.clean = True
+I0913 00:22:52.676138 140645789026112 common.py:620] 	 flags_obj.train_epochs = 2
+I0913 00:22:52.676188 140645789026112 common.py:620] 	 flags_obj.epochs_between_evals = 4
+I0913 00:22:52.676237 140645789026112 common.py:620] 	 flags_obj.batch_size = 128
+I0913 00:22:52.676286 140645789026112 common.py:620] 	 flags_obj.num_gpus = 1
+I0913 00:22:52.676336 140645789026112 common.py:620] 	 flags_obj.run_eagerly = False
+I0913 00:22:52.676385 140645789026112 common.py:620] 	 flags_obj.distribution_strategy = one_device
+I0913 00:22:52.676436 140645789026112 common.py:617] Module tf2_common.utils.flags._benchmark:
+I0913 00:22:52.676492 140645789026112 common.py:620] 	 flags_obj.benchmark_logger_type = BaseBenchmarkLogger
+I0913 00:22:52.676543 140645789026112 common.py:620] 	 flags_obj.benchmark_test_id = None
+I0913 00:22:52.676594 140645789026112 common.py:620] 	 flags_obj.log_steps = 12
+I0913 00:22:52.676643 140645789026112 common.py:620] 	 flags_obj.benchmark_log_dir = None
+I0913 00:22:52.676699 140645789026112 common.py:620] 	 flags_obj.gcp_project = None
+I0913 00:22:52.676749 140645789026112 common.py:620] 	 flags_obj.bigquery_data_set = test_benchmark
+I0913 00:22:52.676798 140645789026112 common.py:620] 	 flags_obj.bigquery_run_table = benchmark_run
+I0913 00:22:52.676848 140645789026112 common.py:620] 	 flags_obj.bigquery_run_status_table = benchmark_run_status
+I0913 00:22:52.676898 140645789026112 common.py:620] 	 flags_obj.bigquery_metric_table = benchmark_metric
+I0913 00:22:52.676948 140645789026112 common.py:617] Module tf2_common.utils.flags._distribution:
+I0913 00:22:52.677003 140645789026112 common.py:620] 	 flags_obj.worker_hosts = None
+I0913 00:22:52.677053 140645789026112 common.py:620] 	 flags_obj.task_index = -1
+I0913 00:22:52.677104 140645789026112 common.py:617] Module tf2_common.utils.flags._misc:
+I0913 00:22:52.677160 140645789026112 common.py:620] 	 flags_obj.data_format = None
+I0913 00:22:52.677211 140645789026112 common.py:617] Module tf2_common.utils.flags._performance:
+I0913 00:22:52.677266 140645789026112 common.py:620] 	 flags_obj.use_synthetic_data = False
+I0913 00:22:52.677317 140645789026112 common.py:620] 	 flags_obj.dtype = fp32
+I0913 00:22:52.677368 140645789026112 common.py:620] 	 flags_obj.loss_scale = None
+I0913 00:22:52.677419 140645789026112 common.py:620] 	 flags_obj.fp16_implementation = keras
+I0913 00:22:52.677469 140645789026112 common.py:620] 	 flags_obj.all_reduce_alg = None
+I0913 00:22:52.677518 140645789026112 common.py:620] 	 flags_obj.num_packs = 1
+I0913 00:22:52.677567 140645789026112 common.py:620] 	 flags_obj.tf_gpu_thread_mode = gpu_private
+I0913 00:22:52.677616 140645789026112 common.py:620] 	 flags_obj.per_gpu_thread_count = 0
+I0913 00:22:52.677665 140645789026112 common.py:620] 	 flags_obj.datasets_num_private_threads = 32
+I0913 00:22:52.677715 140645789026112 common.py:620] 	 flags_obj.training_dataset_cache = False
+I0913 00:22:52.677772 140645789026112 common.py:620] 	 flags_obj.training_prefetch_batchs = 128
+I0913 00:22:52.677824 140645789026112 common.py:620] 	 flags_obj.eval_dataset_cache = False
+I0913 00:22:52.677874 140645789026112 common.py:620] 	 flags_obj.eval_prefetch_batchs = 192
+I0913 00:22:52.677923 140645789026112 common.py:620] 	 flags_obj.tf_data_experimental_slack = False
+I0913 00:22:52.677973 140645789026112 common.py:620] 	 flags_obj.enable_xla = False
+I0913 00:22:52.678022 140645789026112 common.py:620] 	 flags_obj.force_v2_in_keras_compile = None
+2022-09-13 00:22:52.678251: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-09-13 00:22:52.679330: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2022-09-13 00:22:52.732897: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-09-13 00:22:52.733092: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:00:1e.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.78GiB deviceMemoryBandwidth: 836.37GiB/s
+2022-09-13 00:22:52.733121: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2022-09-13 00:22:52.736321: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2022-09-13 00:22:52.736368: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2022-09-13 00:22:52.737724: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-09-13 00:22:52.737985: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-09-13 00:22:52.741501: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-09-13 00:22:52.742239: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2022-09-13 00:22:52.742417: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2022-09-13 00:22:52.742533: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-09-13 00:22:52.742752: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-09-13 00:22:52.742893: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+I0913 00:22:52.743063 140645789026112 keras_utils.py:243] Logical CPU cores: 8
+I0913 00:22:52.743660 140645789026112 keras_utils.py:250] TF_GPU_THREAD_COUNT: 2
+I0913 00:22:52.743741 140645789026112 keras_utils.py:252] TF_GPU_THREAD_MODE: gpu_private
+I0913 00:22:52.743808 140645789026112 keras_utils.py:262] Recommended datasets_num_private_threads: 5
+2022-09-13 00:22:52.745105: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-09-13 00:22:52.745248: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-09-13 00:22:52.745417: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:00:1e.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.78GiB deviceMemoryBandwidth: 836.37GiB/s
+2022-09-13 00:22:52.745444: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2022-09-13 00:22:52.745481: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2022-09-13 00:22:52.745500: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2022-09-13 00:22:52.745516: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-09-13 00:22:52.745532: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-09-13 00:22:52.745548: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-09-13 00:22:52.745564: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2022-09-13 00:22:52.745580: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2022-09-13 00:22:52.745653: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-09-13 00:22:52.745839: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-09-13 00:22:52.745968: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2022-09-13 00:22:52.746008: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2022-09-13 00:22:53.478420: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-09-13 00:22:53.478462: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2022-09-13 00:22:53.478474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2022-09-13 00:22:53.478668: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-09-13 00:22:53.478895: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-09-13 00:22:53.479087: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-09-13 00:22:53.479246: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14762 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+:::MLL 1663028573.481 global_batch_size: {"value": 128, "metadata": {"lineno": 155, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:53.481149 140645789026112 mlp_log.py:82] :::MLL 1663028573.481 global_batch_size: {"value": 128, "metadata": {"lineno": 155, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+:::MLL 1663028573.482 train_samples: {"value": 100000, "metadata": {"lineno": 157, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:53.481766 140645789026112 mlp_log.py:82] :::MLL 1663028573.482 train_samples: {"value": 100000, "metadata": {"lineno": 157, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+:::MLL 1663028573.482 eval_samples: {"value": 10000, "metadata": {"lineno": 159, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:53.482298 140645789026112 mlp_log.py:82] :::MLL 1663028573.482 eval_samples: {"value": 10000, "metadata": {"lineno": 159, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+:::MLL 1663028573.483 model_bn_span: {"value": 128, "metadata": {"lineno": 163, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:53.482834 140645789026112 mlp_log.py:82] :::MLL 1663028573.483 model_bn_span: {"value": 128, "metadata": {"lineno": 163, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:53.482989 140645789026112 resnet_ctl_imagenet_main.py:172] Training 2 epochs, each epoch has 781 steps, total steps: 1562; Eval 79 steps
+:::MLL 1663028574.899 opt_name: {"value": "lars", "metadata": {"lineno": 101, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+I0913 00:22:54.898925 140645789026112 mlp_log.py:82] :::MLL 1663028574.899 opt_name: {"value": "lars", "metadata": {"lineno": 101, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+:::MLL 1663028574.900 lars_epsilon: {"value": 0.0, "metadata": {"lineno": 103, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+I0913 00:22:54.899719 140645789026112 mlp_log.py:82] :::MLL 1663028574.900 lars_epsilon: {"value": 0.0, "metadata": {"lineno": 103, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+:::MLL 1663028574.900 lars_opt_weight_decay: {"value": 0.0002, "metadata": {"lineno": 105, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+I0913 00:22:54.900361 140645789026112 mlp_log.py:82] :::MLL 1663028574.900 lars_opt_weight_decay: {"value": 0.0002, "metadata": {"lineno": 105, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+:::MLL 1663028574.901 lars_opt_base_learning_rate: {"value": 8.5, "metadata": {"lineno": 107, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+I0913 00:22:54.900983 140645789026112 mlp_log.py:82] :::MLL 1663028574.901 lars_opt_base_learning_rate: {"value": 8.5, "metadata": {"lineno": 107, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+:::MLL 1663028574.902 lars_opt_learning_rate_warmup_epochs: {"value": 1.0, "metadata": {"lineno": 109, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+I0913 00:22:54.901600 140645789026112 mlp_log.py:82] :::MLL 1663028574.902 lars_opt_learning_rate_warmup_epochs: {"value": 1.0, "metadata": {"lineno": 109, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+:::MLL 1663028574.902 lars_opt_end_learning_rate: {"value": 0.0001, "metadata": {"lineno": 111, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+I0913 00:22:54.902213 140645789026112 mlp_log.py:82] :::MLL 1663028574.902 lars_opt_end_learning_rate: {"value": 0.0001, "metadata": {"lineno": 111, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+:::MLL 1663028574.903 lars_opt_learning_rate_decay_steps: {"value": 782, "metadata": {"lineno": 116, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+I0913 00:22:54.903003 140645789026112 mlp_log.py:82] :::MLL 1663028574.903 lars_opt_learning_rate_decay_steps: {"value": 782, "metadata": {"lineno": 116, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+:::MLL 1663028574.904 lars_opt_learning_rate_decay_poly_power: {"value": 2.0, "metadata": {"lineno": 118, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+I0913 00:22:54.903687 140645789026112 mlp_log.py:82] :::MLL 1663028574.904 lars_opt_learning_rate_decay_poly_power: {"value": 2.0, "metadata": {"lineno": 118, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+:::MLL 1663028574.904 lars_opt_momentum: {"value": 0.9, "metadata": {"lineno": 119, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+I0913 00:22:54.904320 140645789026112 mlp_log.py:82] :::MLL 1663028574.904 lars_opt_momentum: {"value": 0.9, "metadata": {"lineno": 119, "file": "/home/dev/training/image_classification/tensorflow2/lars_util.py"}}
+:::MLL 1663028575.042 init_stop: {"value": null, "metadata": {"lineno": 223, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:55.042266 140645789026112 mlp_log.py:82] :::MLL 1663028575.042 init_stop: {"value": null, "metadata": {"lineno": 223, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+:::MLL 1663028575.043 run_start: {"value": null, "metadata": {"lineno": 232, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:55.042926 140645789026112 mlp_log.py:82] :::MLL 1663028575.043 run_start: {"value": null, "metadata": {"lineno": 232, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+:::MLL 1663028575.043 block_start: {"value": null, "metadata": {"first_epoch_num": 1, "epoch_count": 2, "lineno": 241, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:55.043508 140645789026112 mlp_log.py:82] :::MLL 1663028575.043 block_start: {"value": null, "metadata": {"first_epoch_num": 1, "epoch_count": 2, "lineno": 241, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:22:55.044089 140645789026112 controller.py:247] Train at step 0 of 1562
+I0913 00:22:55.044202 140645789026112 controller.py:252] Entering training loop with 781 steps, at step 0 of 1562
+WARNING:tensorflow:From /home/dev/training/image_classification/tensorflow2/tf2_common/training/utils.py:139: StrategyBase.experimental_distribute_datasets_from_function (from tensorflow.python.distribute.distribute_lib) is deprecated and will be removed in a future version.
+Instructions for updating:
+rename to distribute_datasets_from_function
+W0913 00:22:55.044423 140645789026112 deprecation.py:339] From /home/dev/training/image_classification/tensorflow2/tf2_common/training/utils.py:139: StrategyBase.experimental_distribute_datasets_from_function (from tensorflow.python.distribute.distribute_lib) is deprecated and will be removed in a future version.
+Instructions for updating:
+rename to distribute_datasets_from_function
+I0913 00:22:55.051138 140645789026112 imagenet_preprocessing.py:344] Sharding the dataset: input_pipeline_id=0 num_input_pipelines=1
+I0913 00:22:55.075344 140645789026112 imagenet_preprocessing.py:109] datasets_num_private_threads: 32
+I0913 00:22:55.076007 140645789026112 imagenet_preprocessing.py:122] Num classes: 1000
+I0913 00:22:55.076107 140645789026112 imagenet_preprocessing.py:123] One hot: True
+2022-09-13 00:22:55.787469: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2022-09-13 00:22:55.807582: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2300010000 Hz
+2022-09-13 00:23:16.886845: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7fe994177480 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2022-09-13 00:23:16.886954: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2022-09-13 00:23:20.096149: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2022-09-13 00:23:20.780051: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2022-09-13 00:23:20.780923: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2022-09-13 00:23:46.656868: I tensorflow/compiler/jit/xla_compilation_cache.cc:333] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+I0913 00:27:48.554142 140645789026112 keras_utils.py:122] TimeHistory: 341.57 examples/second between steps 0 and 781
+I0913 00:27:48.555850 140645789026112 controller.py:220] step: 781        steps_per_second: 2.66        {'train_loss': 29.142515, 'train_accuracy': 0.89633685}
+I0913 00:27:48.556012 140645789026112 controller.py:252] Entering training loop with 781 steps, at step 781 of 1562
+I0913 00:31:49.061750 140645789026112 keras_utils.py:122] TimeHistory: 415.66 examples/second between steps 781 and 1562
+I0913 00:31:49.063133 140645789026112 controller.py:220] step: 1562        steps_per_second: 3.25        {'train_loss': 181.06802, 'train_accuracy': 0.8606354}
+I0913 00:31:49.063252 140645789026112 controller.py:185] Start evaluation at step: 1562
+I0913 00:31:49.066287 140645789026112 imagenet_preprocessing.py:344] Sharding the dataset: input_pipeline_id=0 num_input_pipelines=1
+I0913 00:31:49.080451 140645789026112 imagenet_preprocessing.py:109] datasets_num_private_threads: 32
+I0913 00:31:49.080634 140645789026112 imagenet_preprocessing.py:122] Num classes: 1000
+I0913 00:31:49.080710 140645789026112 imagenet_preprocessing.py:123] One hot: True
+step: 781        steps_per_second: 2.66        {'train_loss': 29.142515, 'train_accuracy': 0.89633685}
+step: 1562        steps_per_second: 3.25        {'train_loss': 181.06802, 'train_accuracy': 0.8606354}
+:::MLL 1663029109.421 eval_start: {"value": null, "metadata": {"epoch_num": 2, "lineno": 396, "file": "/home/dev/training/image_classification/tensorflow2/resnet_runnable.py"}}
+I0913 00:31:49.421057 140645789026112 mlp_log.py:82] :::MLL 1663029109.421 eval_start: {"value": null, "metadata": {"epoch_num": 2, "lineno": 396, "file": "/home/dev/training/image_classification/tensorflow2/resnet_runnable.py"}}
+:::MLL 1663029110.336 eval_stop: {"value": null, "metadata": {"epoch_num": 2, "lineno": 434, "file": "/home/dev/training/image_classification/tensorflow2/resnet_runnable.py"}}
+I0913 00:31:50.335745 140645789026112 mlp_log.py:82] :::MLL 1663029110.336 eval_stop: {"value": null, "metadata": {"epoch_num": 2, "lineno": 434, "file": "/home/dev/training/image_classification/tensorflow2/resnet_runnable.py"}}
+:::MLL 1663029110.337 eval_accuracy: {"value": 0.0, "metadata": {"epoch_num": 2, "lineno": 443, "file": "/home/dev/training/image_classification/tensorflow2/resnet_runnable.py"}}
+I0913 00:31:50.337311 140645789026112 mlp_log.py:82] :::MLL 1663029110.337 eval_accuracy: {"value": 0.0, "metadata": {"epoch_num": 2, "lineno": 443, "file": "/home/dev/training/image_classification/tensorflow2/resnet_runnable.py"}}
+:::MLL 1663029110.338 block_stop: {"value": null, "metadata": {"first_epoch_num": 1, "epoch_count": 2, "lineno": 456, "file": "/home/dev/training/image_classification/tensorflow2/resnet_runnable.py"}}
+I0913 00:31:50.338038 140645789026112 mlp_log.py:82] :::MLL 1663029110.338 block_stop: {"value": null, "metadata": {"first_epoch_num": 1, "epoch_count": 2, "lineno": 456, "file": "/home/dev/training/image_classification/tensorflow2/resnet_runnable.py"}}
+:::MLL 1663029110.339 block_start: {"value": null, "metadata": {"first_epoch_num": 3, "epoch_count": 4, "lineno": 468, "file": "/home/dev/training/image_classification/tensorflow2/resnet_runnable.py"}}
+I0913 00:31:50.338743 140645789026112 mlp_log.py:82] :::MLL 1663029110.339 block_start: {"value": null, "metadata": {"first_epoch_num": 3, "epoch_count": 4, "lineno": 468, "file": "/home/dev/training/image_classification/tensorflow2/resnet_runnable.py"}}
+I0913 00:31:50.339947 140645789026112 controller.py:220] step: 1562        evaluation metric: {'test_loss': 0.0, 'test_accuracy': 0.0, 'continue_training': True}
+step: 1562        evaluation metric: {'test_loss': 0.0, 'test_accuracy': 0.0, 'continue_training': True}
+:::MLL 1663029110.341 run_stop: {"value": null, "metadata": {"status": "success", "lineno": 244, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:31:50.340565 140645789026112 mlp_log.py:82] :::MLL 1663029110.341 run_stop: {"value": null, "metadata": {"status": "success", "lineno": 244, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+:::MLL 1663029110.341 run_final: {"value": null, "metadata": {"lineno": 246, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:31:50.341112 140645789026112 mlp_log.py:82] :::MLL 1663029110.341 run_final: {"value": null, "metadata": {"lineno": 246, "file": "./scripts/resnet_ctl_imagenet_main.py"}}
+I0913 00:31:50.343249 140645789026112 resnet_ctl_imagenet_main.py:262] Run stats:
+{'eval_loss': 0.0, 'eval_acc': 0.0, 'train_loss': 181.06802, 'train_acc': 0.8606354, 'step_timestamp_log': ['BatchTimestamp<batch_index: 0, timestamp: 1663028575.8796873>', 'BatchTimestamp<batch_index: 781, timestamp: 1663028868.5539677>', 'BatchTimestamp<batch_index: 1562, timestamp: 1663029109.0616748>'], 'train_finish_time': 1663029110.340653, 'avg_exp_per_second': 374.98802592724445}
